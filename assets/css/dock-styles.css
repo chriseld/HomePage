@@ -49,7 +49,7 @@
 .button-open {
     transform: rotate(180deg);
     opacity: .01;
-    bottom: 80px;
+    bottom: 160px;
   }
 
 .dock-closed {
