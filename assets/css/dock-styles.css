@@ -11,7 +11,7 @@
     width: 44px;
     height: 40px;
     padding: 4px;
-    transition: 1.25s ease-in-out;
+    transition: .5s ease-in-out;
     z-index: 15;
   }
 
@@ -28,12 +28,13 @@
     position: fixed;
     bottom: 0px;
     height: 0px;
-    transition: 1s ease-out;
+    transition: .25s ease-out;
 }
 
 .icon {
+  background-image: url(./assets/images/icons/setting-03.png);
     border: 3px groove silver;
-    background-color: silver;
+    /* background-color: silver; */
     width: 115px;
     height: 115px;
     border-radius: 100%;
@@ -50,12 +51,16 @@
 
 .button-open {
     transform: rotate(180deg);
-    /* opacity: .01; */
+    opacity: .01;
     bottom: 160px;
   }
 
 .button-close {
   opacity: 1;
+}
+
+.menu-bar-top {
+  transform: rotate(90deg);
 }
 
 /* .dock-closed {
@@ -69,7 +74,7 @@
     background-image: linear-gradient(180deg ,rgb(0, 0, 0),rgb(10, 21, 26),rgb(25, 51, 63),#203A43,#2C5364);
     position: fixed;
     bottom: 0;
-    transition: 1s ease-out;
+    transition: .5s ease-out;
   }
 
   .dock-closed {

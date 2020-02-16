@@ -6,6 +6,7 @@ button.on("click", animateMenu)
 function animateMenu() {
     reset()
     // button.addClass("button-open")
+    // button.addClass("menu-bar-top")
     dock.addClass("dock-open")
     $(this).toggleClass("button-open")
 }
