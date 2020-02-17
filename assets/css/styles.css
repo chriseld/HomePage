@@ -1,0 +1,42 @@
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+.hero-body {
+    margin: 60% auto 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 2px solid white; */
+}
+
+.clock {
+    text-align: center;
+    color: rgba(211, 211, 211, 0.924);
+}
+
+.clock-time {
+    color: white;
+    /* border: whitesmoke solid 2px; */
+    /* width: 50%; */
+    font-size: 70px;
+    text-align: center;
+}
+
+.search-bar {
+    /* border: 2px solid grey; */
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-field {
+    border: none;
+    background: transparent;
+    outline: none;
+    text-align: center;
+    color: white;
+    border-bottom: .05em groove whitesmoke;
+    width: 75%;
+}

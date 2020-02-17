@@ -1,29 +1,29 @@
 var button = $(".toggle-button")
 var dock = $(".dock")
 
-button.on("click", animateMenu)
+button.on("click", openMenu)
 
-function animateMenu() {
-    reset()
-    // button.addClass("button-open")
-    // button.addClass("menu-bar-top")
-    dock.addClass("dock-open")
+function openMenu() {
+    // reset()
     $(this).toggleClass("button-open")
+    dock.toggleClass("dock-show")
+    $(".background").toggleClass("background-shift")
 }
 
-$(".close").on("click", closeMenu)
 
-function closeMenu() {
-    console.log("clicked");
+// $(".close").on("click", closeMenu)
 
-    button.toggleClass("button-open")
-    dock.toggleClass("dock-closed")
-}
+// function closeMenu() {
+//     console.log("clicked");
 
-function reset() {
-    dock.removeClass("dock-open")
-    dock.removeClass("dock-closed")
-}
+//     button.toggleClass("button-open")
+//     dock.toggleClass("dock-closed")
+// }
+
+// function reset() {
+//     dock.removeClass("dock-open")
+//     dock.removeClass("dock-closed")
+// }
 
 
 
