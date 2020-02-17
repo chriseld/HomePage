@@ -54,7 +54,8 @@ function showError(error) {
 $('#clock');
 
 function updateTime() {
-  $('#clock').html(moment().format('D MMMM YYYY H:mm:ss'));
+  $('#clock-date').html(moment().format('MMMM D YYYY'));
+  $('#clock-time').html(moment().format('H:mm:ss'));
 }
 
 setInterval(updateTime, 1000);

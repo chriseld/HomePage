@@ -13,9 +13,24 @@
 
 <body>
 
-    <main class="background">
+    <!-- <main class="background">
         <img src="assets/images/icons/319555.jpg" alt="">
-    </main>
+    </main> -->
+
+    <div class="hero">
+        <div class="hero-body is-paddingless">
+            <div class="container">
+                <div id="clock-date" class="clock clock-date title is-marginless">loading ...</div>
+                <div id="clock-time" class="clock clock-time title"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="search-bar">
+        <input type="text" name="searchText" id="searchText" placeholder="What do you want to know?" class="search-field">
+        <img src="#" alt="#" id="search"></img>
+    </div>
+
     <span class="toggle-button">
         <div class="menu-bar menu-bar-top"></div>
         <div class="menu-bar menu-bar-middle"></div>
@@ -28,18 +43,17 @@
         <button class="icon" id="2"><img src="assets/images/icons/task-manager.png"></button>
         <button class="icon" id="3"><img src="assets/images/icons/weather-02.png"></button>
         <button class="icon" id="4"><img src="assets/images/icons/weather-02.png"></button>
-        <!-- <button class="icon" id="5"><img src="assets/images/icons/weather-02.png"></button> -->
-        <!-- <span class="close">x</span> -->
 
     </div>
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="assets/js/dock-script.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 
-<script src="./assets/js/script.js"></script>
+<!-- <script src="./assets/js/script.js"></script> -->
 
 </html>
