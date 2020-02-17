@@ -4,89 +4,84 @@
     box-sizing: border-box;
 }
 
+.background {
+  background-color: rgba(0, 0, 0, 0.678);
+  position: relative;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.background-shift {
+  margin-top: -10px;
+}
+
 .toggle-button {
     position: fixed;
     bottom: 0px;
-    margin: 50px 50%;
+    margin: 0px 47%;
     width: 44px;
     height: 40px;
-    padding: 4px;
+    padding: 4px 0px;
     transition: .5s ease-in-out;
     z-index: 15;
   }
 
 .menu-bar {
-    background-color: #555;
-    width: 100%;
-    margin: 4.5px auto;
-    padding: 2px;
+    background-color: whitesmoke;
+    width: 50%;
+    margin: 2px 0;
+    padding: 1px;
     border-radius: 2px;
+    transition: .25s;
   }
 
 .dock {
-    display: flex;
-    position: fixed;
-    bottom: 0px;
-    height: 0px;
-    transition: .25s ease-out;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 75px;
+  margin: -75px auto;
+  background-image: linear-gradient(180deg ,rgb(0, 0, 0),rgb(10, 21, 26),rgb(25, 51, 63),#203A43,#2C5364);
+  position: fixed;
+  bottom: 0;
+  transition: .25s ease-out;
+}
+
+.dock-show {
+  margin: 0;
 }
 
 .icon {
-  background-image: url(./assets/images/icons/setting-03.png);
-    border: 3px groove silver;
-    /* background-color: silver; */
-    width: 115px;
-    height: 115px;
-    border-radius: 100%;
-    outline: none;  
-    bottom: 0px;
-    margin: auto;
-    transition: 1s;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  width: 60px;
+  height: 60px;
+  bottom: 0px;
+  margin: auto;
+  transition: .25s;
 }
 
-.icon-clicked {
-    background-color: transparent;
-    border: 3px groove silver;
-}
 
 .button-open {
-    transform: rotate(180deg);
-    opacity: .01;
-    bottom: 160px;
-  }
-
-.button-close {
-  opacity: 1;
+    bottom: 25px;
+    transition: .25s ease-out;
 }
 
-.menu-bar-top {
-  transform: rotate(90deg);
+.button-open .menu-bar-top {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+.button-open .menu-bar-middle {
+  opacity: 0;
+}
+.button-open .menu-bar-bottom {
+  transform: rotate(-45deg);
 }
 
-/* .dock-closed {
-    height: 0px;
-    opacity: .1;
-} */
 
-.dock-open {
-    width: 100%;
-    height: 150px;
-    background-image: linear-gradient(180deg ,rgb(0, 0, 0),rgb(10, 21, 26),rgb(25, 51, 63),#203A43,#2C5364);
-    position: fixed;
-    bottom: 0;
-    transition: .5s ease-out;
-  }
 
-  .dock-closed {
-    height: 0px;
-    /* opacity: .1; */
-    z-index: 1;
-}
 
-  .close {
-    font-size: 35px;
-    margin: 10px 20px;
-  }
+  
 
  
 
