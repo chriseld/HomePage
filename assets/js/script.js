@@ -1,15 +1,3 @@
-// Here are the HTML elements that need to exist on the page
-
-// <div id="clock" class="clock">loading ...</div>
-
-// <input type="text" name="searchText" id="searchText" placeholder="Google Search">
-// <img src="#" alt="#" id="search"></img>
-
-// <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-// <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
-
-// ...
-
 // Geolocation
 
 var city;
@@ -61,6 +49,29 @@ function updateTime() {
 setInterval(updateTime, 1000);
 
 // Widget Show/Hide Functionality
+
+function clearScreen() {
+	var myNode = document.getElementsByClassName("widget");
+	for (var i = 0; i < myNode.length; i++) {
+		myNode[i].style.display="none";
+	}
+}
+
+function showScreen(contentId) {
+	var contentBlock = document.getElementById(contentId);
+	contentBlock.style.display = "block";
+}
+
+function getContent(contentId) {
+	clearScreen();
+	showScreen(contentId);
+}
+
+$(".icon").click(function(){
+  var contentId = $(this).attr('id');
+  console.log(contentId);
+  getContent(contentId);
+});
 
 // Search Widget
 
