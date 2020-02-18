@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bef6c3ead3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/dock-styles.css">
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
@@ -19,17 +20,32 @@
 
     <div class="hero">
         <div class="hero-body is-paddingless">
-            <div class="container">
+            <div class="container widget hide" id="clock">
                 <div id="clock-date" class="clock clock-date title is-marginless">loading ...</div>
                 <div id="clock-time" class="clock clock-time title"></div>
+                <div class="search-bar">
+                    <input type="text" name="searchText" id="searchText" placeholder="What do you want to know?"
+                        class="search-field">
+                    <i class="fas fa-rocket"></i>
+                </div>
             </div>
+
+            <div class="container widget" id="todo">
+                <div id="todo-title" class="title todo-title is-marginless">To Do</div>
+                <div class="agenda">
+                        <input type="text" class="input-field" placeholder="add something to your agenda."
+                            id="todo-input">
+                    <div class="item-wrapper">
+                        <i class="fas fa-times"></i>
+                        <div id="agenda-item" class="input-item">item 1</div>
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
-    <div class="search-bar">
-        <input type="text" name="searchText" id="searchText" placeholder="What do you want to know?" class="search-field">
-        <img src="#" alt="#" id="search"></img>
-    </div>
 
     <span class="toggle-button">
         <div class="menu-bar menu-bar-top"></div>
@@ -53,7 +69,5 @@
     <script src="assets/js/dock-script.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
-
-<!-- <script src="./assets/js/script.js"></script> -->
 
 </html>
