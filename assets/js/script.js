@@ -50,6 +50,7 @@ setInterval(updateTime, 1000);
 
 // Widget Show/Hide Functionality
 
+
 $(".icon").click(function () {
   var iconId = $(this).attr('id');
   // console.log(iconId);
@@ -84,6 +85,29 @@ $(".icon").click(function () {
   }
 });
 
+
+function clearScreen() {
+	var myNode = document.getElementsByClassName("widget");
+	for (var i = 0; i < myNode.length; i++) {
+		myNode[i].style.display="none";
+	}
+}
+
+function showScreen(contentId) {
+	var contentBlock = document.getElementById(contentId);
+	contentBlock.style.display = "block";
+}
+
+function getContent(contentId) {
+	clearScreen();
+	showScreen(contentId);
+}
+
+$(".icon").click(function(){
+  var contentId = $(this).attr('id');
+  console.log(contentId);
+  getContent(contentId);
+});
 
 // Search Widget
 
