@@ -20,18 +20,18 @@
 
     <div class="hero">
         <div class="hero-body is-paddingless">
-            <div class="container widget hide" id="clock">
+            <div class="container widget" id="clock">
                 <div id="clock-date" class="clock clock-date title is-marginless">loading ...</div>
                 <div id="clock-time" class="clock clock-time title"></div>
                 <div class="search-bar">
                     <input type="text" name="searchText" id="searchText" placeholder="What do you want to know?"
                         class="search-field">
-                    <i class="fas fa-rocket"></i>
+                    <i class="fas fa-rocket fa-lg"></i>
                 </div>
             </div>
 
-            <div class="container widget" id="todo">
-                <div id="todo-title" class="title todo-title is-marginless">To Do</div>
+            <div class="container widget hide" id="todo">
+                <div id="todo-title" class="todo-title is-marginless">To Do</div>
                 <div class="agenda">
                         <input type="text" class="input-field" placeholder="add something to your agenda."
                             id="todo-input">
@@ -40,6 +40,27 @@
                         <div id="agenda-item" class="input-item">item 1</div>
                         <i class="fas fa-check"></i>
                     </div>
+                </div>
+            </div>
+            
+            <div class="container widget hide" id="weather">
+                <div id="todo-title" class="todo-title is-marginless">To Do</div>
+                <div class="weather">
+                    <div class="icon">
+                        <i class="fas fa-cloud-showers-heavy"></i>
+                    </div>
+                    <div class="temp">
+                        68°F
+                    </div>
+                    <div class="HighLow">
+                        <div class="High">
+                            78°F
+                        </div>
+                        <div class="Low">
+                            53°F
+                        </div>
+                    </div>  
+                    
                 </div>
             </div>
 
