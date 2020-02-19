@@ -1,0 +1,15 @@
+.cover-container {
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#cover{
+    background: no-repeat center center fixed;
+    background-color: #000;
+    background-size: cover;
+    height:100vh;
+}
