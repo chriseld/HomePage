@@ -3,18 +3,6 @@
     padding: 0px;
     box-sizing: border-box;
 }
-/* 
-.background {
-  z-index: 0;
-  background-color: rgba(0, 0, 0, 0.678);
-  position: relative;
-  overflow: hidden;
-  transition: .5s;
-} */
-
-/* .background-shift {
-  margin-top: -10px;
-} */
 
 .toggle-button {
     position: fixed;

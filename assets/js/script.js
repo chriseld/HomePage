@@ -105,14 +105,39 @@ $("#search").click(function () {
 
 // Weather Widget
 
+// Change3
 function getWeather() {
   var queryURL = "https://api.openweathermap.org/data/2.5/weather?units=imperial&lat=" + lat + "&lon=" + lon + "&appid=6267744aea8e18ec095542c8b808ca0a";
-  var data = $.get(queryURL);
-  console.log(data);
+  $.ajax({
+    url: queryURL,
+    method: "GET"
+  }).then(function(response) {
+
+    var location = JSON.parse(JSON.stringify(response.name));
+    var wicon = $("<img class='wicon' alt='" + response.weather[0].description + "' src='http://openweathermap.org/img/w/" + response.weather[0].icon + ".png'>");
+    var temperature = JSON.parse(JSON.stringify(Math.round(response.main.temp))) + "&deg;F";
+    var highTemp = JSON.parse(JSON.stringify(Math.round(response.main.temp_max))) + "&deg;F";
+    var lowTemp = JSON.parse(JSON.stringify(Math.round(response.main.temp_min))) + "&deg;F";
+  
+    $(".location").append(location);
+    $(".wicon").append(wicon);
+    $(".temp").append(temperature);
+    $(".High").append(highTemp);
+    $(".Low").append(lowTemp);
+
+});
 
 }
 
 // Task Manager Widget
+
+$("#todo-submit").on("click", function(event) {
+
+  event.preventDefault();
+
+  $("#agenda-item").append("<i class='fas fa-times'></i><div class='input-item'>" + $("#todo-input").val() + "</div><i class='fas fa-check'></i><br>");
+
+});
 
 // Settings Widget
 // Dark/Light Mode Switcher
