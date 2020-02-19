@@ -12,14 +12,36 @@ body {
 }
 
 .widget {
-    /* border: 2px solid grey; */
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 2px solid silver;
+    border-radius: .75em;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 95vw;
     margin: auto;
-    padding: 0;
+    padding: 2.5%;
+    padding-top: 0px;
+}
+
+.widget-title {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+.close-widget {
+    position: relative;
+    margin-top: 2%;
+    margin-left: 93%;
+    padding-top: 2px;
+    width: 8%;
+    height: 25px;
+    text-align: center;
+    border: 2px solid silver;
+    border-radius: 25em;
+    margin-bottom: 10px
 }
 
 .hide {
@@ -28,6 +50,7 @@ body {
 
 .show {
     display: block;
+    /* margin: auto; */
 }
 
 .fas {
@@ -37,6 +60,7 @@ body {
 /* clock widget and search */
 
 .clock {
+    padding-top: 25px;
     text-align: center;
     color: rgba(211, 211, 211, 0.924);
 }
@@ -51,6 +75,7 @@ body {
 
 .search-bar {
     /* border: 2px solid grey; */
+    margin: 0 auto;
     margin-top: 30px;
     display: flex;
     justify-content: center;
@@ -70,17 +95,71 @@ body {
     font-size: 15px;
 }
 
-.fa-rocket:before {
-    color: whitesmoke;
-    /* transition: .25s ease-in-out; */
-}
-
-/* to do widget */
-
-.todo-title {
-    text-align: center;
+.fas {
     color: white;
 }
+
+
+/* settings widget */
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    font-size: 20px;
+    padding: 7px;
+    color: white;
+    border: 2px solid silver;
+    outline: none;
+    border-radius: .35em;
+    background-color: transparent;
+}
+
+.settings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin: 25px auto;
+}
+
+.user-name {
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-bottom-width: 2px;
+    border-bottom-style: groove;
+    border-bottom-color: silver;
+    width: 50%;
+    height: 25px;
+}
+
+.dropdown:hover .option {
+    display: block;
+    opacity: 1;
+}
+
+.option {
+    display: none;
+    opacity: 0;
+    color: white;
+    outline: none;
+}
+
+.option:active {
+    color: red;
+    background-color: transparent;
+}
+
+.option:after {
+    color: white;
+}
+
+
+/* to do widget */
 
 .agenda {
     width: 100%;
@@ -88,23 +167,13 @@ body {
     flex-direction: column;
 }
 
-.fas {
-    color: white;
-}
-
 .input {
     width: 70%
 }
 
-.input-wrapper {
-    margin: 10px 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
 .item-wrapper {
     margin: 10px 10px;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -114,12 +183,10 @@ body {
     width: 80%;
     margin: 20px auto;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     color: white;
     border: none;
-    border-bottom-style: groove;
-    border-bottom-width: 1px;
-    border-bottom-color: grey;
+    border-bottom: .05em groove whitesmoke;  
     background-color: transparent;
     outline: none;
 }
@@ -129,3 +196,61 @@ body {
     margin: 0 auto;
 }
 
+.fa-times {
+    font-size: 17px;
+}
+
+
+
+
+/* weather widget */
+
+.weather {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 10px auto;
+    padding: 0 6px;
+    width: 50%;
+}
+
+.temp {
+    color: white;
+    font-size: 40px;
+}
+
+.weather i {
+    font-size: 40px;
+}
+
+.HighLow {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    border: dotted 1px silver;
+    border-radius: 25em;
+    padding: 5px;
+    color: white;
+}
+
+.Low {
+    background: linear-gradient(to right, #004e92c0 70%, #003a6dc0 80%, black 100%);
+    text-align: center;
+    /* padding-right: 15px; */
+    width: 50%;
+    border-right: dotted 1px silver;
+    border-top-left-radius: 25em;
+    border-bottom-left-radius: 25em;
+}
+
+.High {
+    background: linear-gradient(to left, #dd1818c9 75%, #770d0dbb 85%, black 100%);
+    text-align: center;
+    /* padding-right: 15px; */
+    width: 50%;
+    border-left: dotted 1px silver;
+    border-top-right-radius: 25em;
+    border-bottom-right-radius: 25em;
+}

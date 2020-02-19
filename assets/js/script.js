@@ -50,21 +50,22 @@ setInterval(updateTime, 1000);
 
 // Widget Show/Hide Functionality
 
-
 $(".icon").click(function () {
   var iconId = $(this).attr('id');
   // console.log(iconId);
   // getContent(contentId);
 
-  switch(iconId) {
+  switch (iconId) {
     //settings
     case "1":
-      $("#clock").addClass("hide");
-      $("#todo").removeClass("hide");
-      $("#todo").addClass("show");
+      $(".widget").removeClass("show")
+      $(".widget").addClass("hide");
+      $("#settings").removeClass("hide");
+      $("#settings").addClass("show");
       break;
     //to do  
     case "2":
+      $(".widget").removeClass("show");
       $(".widget").addClass("hide");
       $("#todo").removeClass("hide");
       $("#todo").addClass("show");
@@ -72,6 +73,7 @@ $(".icon").click(function () {
     //weather
     case "3":
       $(".widget").addClass("hide");
+      $(".widget").removeClass("show");
       $("#weather").removeClass("hide");
       $("#weather").addClass("show");
       break;
@@ -81,33 +83,17 @@ $(".icon").click(function () {
       $("#todo").removeClass("hide");
       $("#todo").addClass("show");
       break;
-
   }
+
+  $(".close-widget").on("click", function () {
+    $(".widget").removeClass("show");
+    $(".widget").addClass("hide");
+    $("#clock").addClass("show");
+  })
+
 });
 
 
-function clearScreen() {
-	var myNode = document.getElementsByClassName("widget");
-	for (var i = 0; i < myNode.length; i++) {
-		myNode[i].style.display="none";
-	}
-}
-
-function showScreen(contentId) {
-	var contentBlock = document.getElementById(contentId);
-	contentBlock.style.display = "block";
-}
-
-function getContent(contentId) {
-	clearScreen();
-	showScreen(contentId);
-}
-
-$(".icon").click(function(){
-  var contentId = $(this).attr('id');
-  console.log(contentId);
-  getContent(contentId);
-});
 
 // Search Widget
 
