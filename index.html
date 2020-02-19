@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/bef6c3ead3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
@@ -15,84 +14,98 @@
 
 <body>
 
-    <!-- <main class="background">
-        <img src="assets/images/icons/319555.jpg" alt="">
-    </main> -->
     <div class="cover-container">
         <div id="cover"></div>
     </div>
-    
-            <div class="hero">
-                <div class="hero-body is-paddingless">
-                    <div class="container widget" id="clock">
-                        <div id="clock-date" class="clock clock-date title is-marginless">loading ...</div>
-                        <div id="clock-time" class="clock clock-time title"></div>
-                        <div class="search-bar">
-                            <input type="text" name="searchText" id="searchText" placeholder="What do you want to know?"
-                                class="search-field">
-                            <i class="fas fa-rocket fa-lg"></i>
-                        </div>
-                    </div>
 
-                    <div class="container widget hide" id="todo">
-                        <div id="todo-title" class="todo-title is-marginless">To Do</div>
-                        <div class="agenda">
-                                <input type="text" class="input-field" placeholder="add something to your agenda."
-                                    id="todo-input">
-                            <div class="item-wrapper">
-                                <i class="fas fa-times"></i>
-                                <div id="agenda-item" class="input-item">item 1</div>
-                                <i class="fas fa-check"></i>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="container widget hide" id="weather">
-                        <div id="todo-title" class="todo-title is-marginless">To Do</div>
-                        <div class="weather">
-                            <div class="icon">
-                                <i class="fas fa-cloud-showers-heavy"></i>
-                            </div>
-                            <div class="temp">
-                                68°F
-                            </div>
-                            <div class="HighLow">
-                                <div class="High">
-                                    78°F
-                                </div>
-                                <div class="Low">
-                                    53°F
-                                </div>
-                            </div>  
-                            
-                        </div>
-                    </div>
+    <div class="hero">
+        <div class="hero-body is-paddingless">
 
+            <div class="container widget hide" id="settings">
+                <i class="fas fa-times close-widget"></i>
+                <div id="settings" class="widget-title is-marginless">Settings</div>
+                <div class="settings">
+                    <ul class="dropdown">
+                        <li class="option-list">Options</li>
+                        <li><a href="#" class="option" id="op1">Option 1</a></li>
+                        <li><a href="#" class="option" id="op2">Option 2</a></li>
+                        <li><a href="#" class="option" id="op3">Option 3</a></li>
+                    </ul>
+                    <input placeholder="Hi, what's your name?" class="user-name" id="user-name"></input>
+                </div>
+            </div>
+        </div>
+
+        <div class="container widget" id="clock">
+            <div id="clock-date" class="clock clock-date title is-marginless">loading ...</div>
+            <div id="clock-time" class="clock clock-time title"></div>
+            <div class="search-bar">
+                <input type="text" name="searchText" id="searchText" placeholder="What do you want to know?"
+                    class="search-field">
+                <i class="fas fa-rocket " id="search"></i>
+            </div>
+        </div>
+
+        <div class="container widget hide" id="todo">
+            <i class="fas fa-times close-widget"></i>
+            <div id="widget-title" class="widget-title is-marginless">To Do</div>
+            <div class="agenda">
+                <!-- Change2 -->
+                <form id="todo-form">
+                    <input type="text" id="todo-input" class="input-field"
+                        placeholder="add something to your agenda."><input id="todo-submit" type="submit" value="Enter">
+                </form>
+                <div class="item-wrapper">
+                    <!-- <i class="fas fa-times"></i> -->
+                    <div id="agenda-item" class="input-item"></div>
+                    <!-- <i class="fas fa-check"></i> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="container widget hide" id="weather">
+            <i class="fas fa-times close-widget"></i>
+            <div id="widget-title" class="widget-title is-marginless">Weather</div>
+            <div class="weather">
+                <!-- change1 -->
+                <div class="location"></div>
+                <div class="wicon"></div>
+                <div class="temp">
+                </div>
+            </div>
+            <div class="HighLow">
+                <div class="Low">
+                </div>
+                <div class="High">
                 </div>
             </div>
 
+        </div>
 
-            <span class="toggle-button">
-                <div class="menu-bar menu-bar-top"></div>
-                <div class="menu-bar menu-bar-middle"></div>
-                <div class="menu-bar menu-bar-bottom"></div>
-            </span>
+    </div>
+    </div>
 
-            <div class="dock">
 
-                <button class="icon" id="1"><img src="assets/images/icons/setting-03.png"></button>
-                <button class="icon" id="2"><img src="assets/images/icons/task-manager.png"></button>
-                <button class="icon" id="3"><img src="assets/images/icons/weather-02.png"></button>
-                <button class="icon" id="4"><img src="assets/images/icons/weather-02.png"></button>
+    <span class="toggle-button">
+        <div class="menu-bar menu-bar-top"></div>
+        <div class="menu-bar menu-bar-middle"></div>
+        <div class="menu-bar menu-bar-bottom"></div>
+    </span>
 
-            </div>
+    <div class="dock">
 
+        <button class="icon" id="1"><img src="assets/images/icons/setting-03.png"></button>
+        <button class="icon" id="2"><img src="assets/images/icons/task-manager.png"></button>
+        <button class="icon" id="3"><img src="assets/images/icons/weather-02.png"></button>
+        <button class="icon" id="4"><img src="assets/images/icons/weather-02.png"></button>
+
+    </div>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="assets/js/background-script.js"></script>   
+    <script src="assets/js/background-script.js"></script>
     <script src="assets/js/dock-script.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
