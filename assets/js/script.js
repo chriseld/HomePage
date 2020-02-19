@@ -135,7 +135,12 @@ $("#todo-submit").on("click", function(event) {
 
   event.preventDefault();
 
-  $("#agenda-item").append("<i class='fas fa-times'></i><div class='input-item'>" + $("#todo-input").val() + "</div><i class='fas fa-check'></i><br>");
+var item = $("<div>");
+item.attr("id", "agenda-item");
+item.addClass("input-item");
+$(".item-wrapper").append(item);
+
+  item.append("<i class='fas fa-times'></i><div class='input-item'>" + $("#todo-input").val() + "</div><i class='fas fa-check'></i><br>");
 
 });
 
