@@ -108,7 +108,7 @@ var  todaysFacts = [];
 var factCounter = 0;
 
 function getFact() {
-    $("#fact-year").text(todaysFacts[factCounter].year);
+    $("#fact-date").text(moment().format("MMMM Do") + " " + response.Events[factCounter].year);
     $("#random-fact").text(todaysFacts[factCounter].text);
     factCounter++;
 }
