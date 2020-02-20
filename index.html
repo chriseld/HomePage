@@ -36,9 +36,12 @@
                 <div class="settings">
                     <ul id="background-options" class="dropdown">
                         <li class="option-list">Options</li>
-                        <li><button class="option" id="op1" data-background="space">Space</button></li>
-                        <li><button class="option" id="op2" data-background="forest dark">Forest</button></li>
-                        <li><button class="option" id="op3" data-background="ocean dark">Ocean</button></li>
+                        <li class="button-container"><button class="option" id="op1"
+                                data-background="space">Space</button></li>
+                        <li class="button-container"><button class="option" id="op2"
+                                data-background="forest dark">Forest</button></li>
+                        <li class="button-container"><button class="option" id="op3"
+                                data-background="ocean dark">Ocean</button></li>
                     </ul>
 
                     <input placeholder="Hi, what's your name?" class="user-name" id="user-name"></input>
@@ -62,7 +65,7 @@
 
             <div class="widget hide" id="todo">
                 <i class="fas fa-times close-widget"></i>
-                <div id="widget-title" class="todo-title">To Do</div>
+                <div id="widget-title" class="widget-title">To Do</div>
                 <div class="agenda">
                     <form id="todo-form" class="todo-form">
                         <input type="text" id="todo-input" class="input-field"
@@ -97,11 +100,13 @@
             <!-- History Widget -->
 
             <div class="widget hide" id="history">
+                <i class="fas fa-times close-widget"></i>
                 <div id="widget-title" class="widget-title history-title is-marginless">History Today</div>
                 <div class="history">
-                    <h1>Date</h1>
-                    <h2>Year</h2>
-                    <p>fact</p>
+                    <h1 id="fact-date">Date</h1>
+                    <h2 id="fact-year">Year</h2>
+                    <p id="random-fact">fact</p>
+                    <button id="facts">Next Fact</button>
                 </div>
             </div>
 
@@ -133,6 +138,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="assets/js/random-fact.js"></script>
     <script src="assets/js/background-script.js"></script>
     <script src="assets/js/dock-script.js"></script>
     <script src="assets/js/script.js"></script>

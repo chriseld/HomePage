@@ -413,12 +413,13 @@ body {
     }
 
     .widget-title {
-        padding-left: 20%;
+        padding-left: 7%;
         font-size: 40px;
     }
 
     .todo-title {
-        padding-left: 12%;
+       position: relative;
+       right: 100px; 
     }
 
     .history-title {
@@ -430,7 +431,7 @@ body {
 @media only screen and (min-width: 1024px) {
 
     .widget-title {
-        padding-left: 15%;
+        padding-left: 6%;
     }
 
     .todo-title {
@@ -453,7 +454,7 @@ body {
 @media only screen and (min-width: 1216px) {
     
     .widget-title {
-        padding-left: 12%;
+        padding-left: 6%;
     }
 
     .todo-title {
@@ -524,7 +525,7 @@ body {
     }
 
     .history-title {
-        padding-left: 7%;
+        padding-left: 10%;
     }
 
 }
