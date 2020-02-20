@@ -278,7 +278,7 @@ body {
     opacity: 1;
 }
 
-.input-item {
+.itemWrap {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -287,6 +287,10 @@ body {
     color: white;
     width: 100%;
     /* margin: 5px 25%; */
+}
+
+.input-item {
+    margin: 0 10px;
 }
 
 .fa-times {
@@ -301,7 +305,13 @@ body {
     color: green;
 }
 
+.finished {
+    color: green;
+}
 
+.itemComplete {
+    text-decoration: line-through;
+}
 
 
 /* weather widget */
