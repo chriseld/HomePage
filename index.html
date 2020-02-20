@@ -40,8 +40,10 @@
                         <li class="button-container"><button class="option" id="op2" data-background="forest dark">Forest</button></li>
                         <li class="button-container"><button class="option" id="op3" data-background="ocean dark">Ocean</button></li>
                     </ul>
-
-                    <input placeholder="Hi, what's your name?" class="user-name" id="user-name"></input>
+                    <form id="name-form" class="name-form">
+                        <input placeholder="Hi, what's your name?" class="user-name" id="user-name"></input>
+                        <input id="name-submit" type="submit" value="Add" class="button">
+                    </form>
                 </div>
             </div>
 
@@ -66,7 +68,7 @@
                 <div class="agenda">
                     <form id="todo-form" class="todo-form">
                         <input type="text" id="todo-input" class="input-field"
-                            placeholder="Add something to your agenda.">
+                            placeholder="Add to your agenda (max 10 items).">
                         <input id="todo-submit" type="submit" value="Add" class="button">
                     </form>
                     <div class="item-wrapper">
