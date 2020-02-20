@@ -43,8 +43,10 @@
                         <li class="button-container"><button class="option" id="op3"
                                 data-background="ocean dark">Ocean</button></li>
                     </ul>
-
-                    <input placeholder="Hi, what's your name?" class="user-name" id="user-name"></input>
+                    <form id="name-form" class="name-form">
+                        <input placeholder="Hi, what's your name?" class="user-name" id="user-name"></input>
+                        <input id="name-submit" type="submit" value="Add" class="button">
+                    </form>
                 </div>
             </div>
 
@@ -103,10 +105,9 @@
                 <i class="fas fa-times close-widget"></i>
                 <div id="widget-title" class="widget-title history-title is-marginless">History Today</div>
                 <div class="history">
-                    <h1 id="fact-date">Date</h1>
-                    <h2 id="fact-year">Year</h2>
-                    <p id="random-fact">fact</p>
-                    <button id="facts">Next Fact</button>
+                    <h1 id="fact-date" class="fact-item fact-top">Date</h1>
+                    <p id="random-fact" class="fact-item">fact</p>
+                    <button id="facts" class="button history-button">Next Fact</button>
                 </div>
             </div>
 

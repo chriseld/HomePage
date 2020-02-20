@@ -166,13 +166,23 @@ body {
     border-bottom-width: 2px;
     border-bottom-style: groove;
     border-bottom-color: silver;
-    width: 50%;
+    width: 90%;
     height: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     color: white;
     font-style: italic;
     font-weight: 300;
 }
+
+.name-form {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-left: 100px;
+    margin: 50px auto;
+}
+
 
 .option-list {
     text-align: center;
@@ -202,11 +212,11 @@ body {
 
 /* to do widget */
 
-.todo-title {
-    /* position: relative; */
-    /* right: 50px; */
-    /* padding-left: 20%; */
-}
+/* .todo-title {
+    position: relative;
+    right: 50px;
+    padding-left: 20%;
+} */
 
 .agenda {
     width: 100%;
@@ -278,7 +288,7 @@ body {
     opacity: 1;
 }
 
-.input-item {
+.itemWrap {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -287,6 +297,10 @@ body {
     color: white;
     width: 100%;
     /* margin: 5px 25%; */
+}
+
+.input-item {
+    margin: 0 10px;
 }
 
 .fa-times {
@@ -301,7 +315,13 @@ body {
     color: green;
 }
 
+.finished {
+    color: green;
+}
 
+.itemComplete {
+    text-decoration: line-through;
+}
 
 
 /* weather widget */
@@ -376,6 +396,21 @@ body {
     
     position: relative;
     /* left: 2px; */
+}
+
+.history-button {
+    margin: 25px 0;
+}
+
+.fact-item {
+    margin: 10px auto;
+}
+
+.fact-top {
+    font-weight: 100;
+    font-size: 35px;
+    margin-bottom: 15px;
+
 }
 
 @media only screen and (min-width: 768px) {
