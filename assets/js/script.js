@@ -79,9 +79,10 @@ $(".icon").click(function () {
       break;
     //clock
     case "4":
-      $("#clock").addClass("hide");
-      $("#todo").removeClass("hide");
-      $("#todo").addClass("show");
+      $(".widget").addClass("hide");
+      $(".widget").removeClass("show");
+      $("#history").removeClass("hide");
+      $("#history").addClass("show");
       break;
   }
 

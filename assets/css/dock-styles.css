@@ -7,7 +7,7 @@
 .toggle-button {
     position: fixed;
     bottom: 0px;
-    margin: 0px 47%;
+    margin: 0px 50%;
     width: 44px;
     height: 40px;
     padding: 4px 0px;
@@ -30,7 +30,10 @@
   width: 100%;
   height: 75px;
   margin: -75px auto;
-  background-image: linear-gradient(180deg ,#000000, #434343);
+  background-image: linear-gradient(180deg ,#0000009b, #43434394);
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: rgb(79, 89, 100);
   position: fixed;
   bottom: 0;
   transition: .25s ease-out;
@@ -68,6 +71,21 @@
 }
 
 
+@media only screen and (min-width: 768px) {
+
+  .toggle-button {
+    margin: 0 49%; 
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+  .toggle-button {
+    margin: 0 49%; 
+  }
+
+}
 
 
   
