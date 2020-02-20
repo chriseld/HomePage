@@ -114,12 +114,12 @@ function getFact() {
 }
 
 $(document).ready(function() {
-    $("#fact-date").text(moment().format("MMMM Do"));
+    
 //historyData.host = "http://localhost:8001/";
     historyData.load(function(response) {
         // randomly sort our data just for variety
             response.Events.sort(randOrd);
-            $("#fact-year").text(response.Events[factCounter].year);
+            $("#fact-date").text(moment().format("MMMM Do") + " " + response.Events[factCounter].year);
             $("#random-fact").text(response.Events[factCounter].text);
             factCounter++;
             for (var i = 0; i < response.Events.length; i++) {
