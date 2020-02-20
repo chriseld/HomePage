@@ -330,9 +330,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto 10px auto;
+    margin: 0 auto;
     padding: 0 10px;
-    /* width: 30%; */
+    width: 100%;
 }
 
 .location {
@@ -555,9 +555,9 @@ body {
         padding-left: 7%;
     }
 
-    .weather {
+    /* .weather {
         width: 25%;
-    }
+    } */
 
     .history-title {
         padding-left: 10%;
