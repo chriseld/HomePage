@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/bef6c3ead3.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/bg-styles.css">
     <link rel="stylesheet" type="text/css" href="assets/css/dock-styles.css">
@@ -39,6 +40,7 @@
                         <li class="button-container"><button class="option" id="op2" data-background="forest dark">Forest</button></li>
                         <li class="button-container"><button class="option" id="op3" data-background="ocean dark">Ocean</button></li>
                     </ul>
+
                     <input placeholder="Hi, what's your name?" class="user-name" id="user-name"></input>
                 </div>
             </div>
@@ -64,7 +66,7 @@
                 <div class="agenda">
                     <form id="todo-form" class="todo-form">
                         <input type="text" id="todo-input" class="input-field"
-                            placeholder="add something to your agenda.">
+                            placeholder="Add something to your agenda.">
                         <input id="todo-submit" type="submit" value="Add" class="button">
                     </form>
                     <div class="item-wrapper">
@@ -91,6 +93,18 @@
                 </div>
 
             </div>
+
+            <!-- History Widget -->
+
+            <div class="widget hide" id="history">
+                <div id="widget-title" class="widget-title history-title is-marginless">History Today</div>
+                <div class="history">
+                    <h1>Date</h1>
+                    <h2>Year</h2>
+                    <p>fact</p>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -109,7 +123,7 @@
         <button class="icon" id="1"><img src="assets/images/icons/setting-03.png"></button>
         <button class="icon" id="2"><img src="assets/images/icons/task-manager.png"></button>
         <button class="icon" id="3"><img src="assets/images/icons/weather-02.png"></button>
-        <button class="icon" id="4"><img src="assets/images/icons/weather-02.png"></button>
+        <button class="icon" id="4"><img src="assets/images/icons/history-icon.png"></button>
 
     </div>
 
