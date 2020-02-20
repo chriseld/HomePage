@@ -40,7 +40,7 @@ body {
 
 .widget-title {
     text-align: center;
-    padding-left: 38%;
+    padding-left: 7%;
     /* padding-bottom: 25%; */
     color: white;
     font-size: 30px;
@@ -166,13 +166,23 @@ body {
     border-bottom-width: 2px;
     border-bottom-style: groove;
     border-bottom-color: silver;
-    width: 50%;
+    width: 90%;
     height: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     color: white;
     font-style: italic;
     font-weight: 300;
 }
+
+.name-form {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-left: 100px;
+    margin: 50px auto;
+}
+
 
 .option-list {
     text-align: center;
@@ -202,11 +212,11 @@ body {
 
 /* to do widget */
 
-.todo-title {
-    /* position: relative; */
-    /* right: 50px; */
+/* .todo-title {
+    position: relative;
+    right: 50px;
     padding-left: 20%;
-}
+} */
 
 .agenda {
     width: 100%;
@@ -383,7 +393,24 @@ body {
 }
 
 .history-title {
-    padding-left: 25%;
+    
+    position: relative;
+    /* left: 2px; */
+}
+
+.history-button {
+    margin: 25px 0;
+}
+
+.fact-item {
+    margin: 10px auto;
+}
+
+.fact-top {
+    font-weight: 100;
+    font-size: 35px;
+    margin-bottom: 15px;
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -421,12 +448,13 @@ body {
     }
 
     .widget-title {
-        padding-left: 18%;
+        padding-left: 7%;
         font-size: 40px;
     }
 
     .todo-title {
-        padding-left: 12%;
+       position: relative;
+       right: 100px; 
     }
 
     .history-title {
@@ -438,7 +466,7 @@ body {
 @media only screen and (min-width: 1024px) {
 
     .widget-title {
-        padding-left: 15%;
+        padding-left: 6%;
     }
 
     .todo-title {
@@ -461,16 +489,15 @@ body {
 @media only screen and (min-width: 1216px) {
     
     .widget-title {
-        padding-left: 12%;
+        padding-left: 6%;
     }
 
     .todo-title {
-        position: relative;
-        right: 38px;
+        padding-left: 8%;
     }
 
     .weather {
-        width: 38%;
+       padding: 0;
     }
 
     .history-title {
@@ -520,13 +547,12 @@ body {
 @media only screen and (max-width: 1920px) {
 
     .widget-title {
-        position: relative;
-        right: 52px;
+       padding-right: 6%;
     }
 
     .todo-title {
-        position: relative;
-        right: 45px;
+        padding: 0; 
+        padding-left: 7%;
     }
 
     .weather {
@@ -534,7 +560,7 @@ body {
     }
 
     .history-title {
-        padding-left: 7%;
+        padding-left: 10%;
     }
 
 }
